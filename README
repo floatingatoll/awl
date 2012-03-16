@@ -1,0 +1,5 @@
+Fork of the adv_windowlist scripts from http://anti.teamidiot.de/static/nei/*/Code/Irssi/
+
+I wanted hide_data to crush a window to "inactive" coloring, rather than hiding it entirely.
+
+Original is branch nei, tag nei-0.6ac.
