@@ -985,8 +985,8 @@ sub remake () {
 		if (!defined $colour) { $colour = ''; }
 
 		if ($win->{'data_level'} < Irssi::settings_get_int(set 'hide_data')) {
-			next; } # for Geert
-		if    ($win->{'data_level'} == 0) { $hilight = '{sb_act_none '; } #}
+			$hilight = '{sb_act_none '; } # for atoll, or: next; } # for Geert
+		elsif ($win->{'data_level'} == 0) { $hilight = '{sb_act_none '; } #}
 		elsif ($win->{'data_level'} == 1) { $hilight = '{sb_act_text '; } #}
 		elsif ($win->{'data_level'} == 2) { $hilight = '{sb_act_msg '; } #}
 		elsif ($colour             ne '') { $hilight = "{sb_act_hilight_color $colour "; }
